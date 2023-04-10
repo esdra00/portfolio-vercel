@@ -5,22 +5,22 @@ export default function Nav({classMobile, classname}) {
 		<nav>
 			<ul className={classname}>
 				<li>
-					<Link to="/portfolioPROD/" className={classMobile}>
+					<Link to="/" className={classMobile}>
 						Home
 					</Link>
 				</li>
 				<li>
-					<Link to="/portfolioPROD/#about" className={classMobile}>
+					<Link to="/#about" className={classMobile}>
 						About
 					</Link>
 				</li>
 				<li>
-					<Link to="/portfolioPROD/projectsPage" className={classMobile}>
+					<Link to="/projectsPage" className={classMobile}>
 						Projects
 					</Link>
 				</li>
 				<li>
-					<Link to="/portfolioPROD/contactPage" className={classMobile}>
+					<Link to="/contactPage" className={classMobile}>
 						Contact
 					</Link>
 				</li>
