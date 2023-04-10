@@ -1,7 +1,21 @@
 import {motion, useScroll, useTransform} from "framer-motion";
 import {useRef} from "react";
-import Carrousel from "../../assets/projects preview/desktop-preview.jpg";
+import data from "../../assets/data.json";
 import style from "./carouselStyle.module.scss";
+
+const CarouselImg = () => {
+	return (
+		<>
+			{data.map((e) => {
+				return (
+					<div className={style.carousel_img}>
+						<img src={e.Preview} alt="" />
+					</div>
+				);
+			})}
+		</>
+	);
+};
 
 export default function Carousel() {
 	const ref = useRef(null);
@@ -18,18 +32,7 @@ export default function Carousel() {
 						}),
 					}}
 				>
-					<div className={style.carousel_img}>
-						<img src={Carrousel} alt="" />
-					</div>
-					<div className={style.carousel_img}>
-						<img src={Carrousel} alt="" />
-					</div>
-					<div className={style.carousel_img}>
-						<img src={Carrousel} alt="" />
-					</div>
-					<div className={style.carousel_img}>
-						<img src={Carrousel} alt="" />
-					</div>
+					<CarouselImg />
 				</motion.div>
 				<motion.div
 					className={style.row}
@@ -39,18 +42,7 @@ export default function Carousel() {
 						}),
 					}}
 				>
-					<div className={style.carousel_img}>
-						<img src={Carrousel} alt="" />
-					</div>
-					<div className={style.carousel_img}>
-						<img src={Carrousel} alt="" />
-					</div>
-					<div className={style.carousel_img}>
-						<img src={Carrousel} alt="" />
-					</div>
-					<div className={style.carousel_img}>
-						<img src={Carrousel} alt="" />
-					</div>
+					<CarouselImg />
 				</motion.div>
 			</div>
 		</div>

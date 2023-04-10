@@ -1,35 +1,64 @@
 import {motion} from "framer-motion";
-import style from "./projectCard.module.scss";
 import projectsData from "../../assets/data.json";
+import style from "./projectCard.module.scss";
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // add key: id to second iteration
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+// with animation
 export default function ProjectCard() {
-	const image = {
-		img: {x: 50},
-		inView: {
-			x: 0,
-			transition: {
-				type: "spring",
-				duration: 2,
-				bounce: 0.3,
-			},
-		},
-	};
-	const text = {
-		txt: {x: -50, opacity: 0},
-		inView: {
-			x: 0,
-			opacity: 1,
-			transition: {
-				type: "spring",
-				duration: 2,
-				bounce: 0.3,
-			},
-		},
-	};
+	const image =
+		window.innerWidth > 768
+			? {
+					img: {x: 50},
+					inView: {
+						x: 0,
+						transition: {
+							type: "spring",
+							duration: 2,
+							bounce: 0.3,
+						},
+					},
+			  }
+			: {
+					img: {y: 100, scaleX: 0.8},
+					inView: {
+						y: 0,
+						scaleX: 1,
+						transition: {
+							type: "spring",
+							duration: 1.5,
+						},
+					},
+			  };
+
+	const text =
+		window.innerWidth > 768
+			? {
+					txt: {x: -50, opacity: 0},
+					inView: {
+						x: 0,
+						opacity: 1,
+						transition: {
+							type: "spring",
+							duration: 2,
+							bounce: 0.3,
+						},
+					},
+			  }
+			: {
+					txt: {y: 100, scaleX: 0.8},
+					inView: {
+						y: 0,
+						scaleX: 1,
+						transition: {
+							type: "spring",
+							duration: 1.5,
+						},
+					},
+			  };
+
 	return (
 		<>
 			{projectsData &&
