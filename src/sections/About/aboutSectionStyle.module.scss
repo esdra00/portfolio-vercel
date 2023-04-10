@@ -17,13 +17,13 @@
 .title {
 	position: absolute;
 	top: 0;
-	left: 150px;
+	left: 0;
 	z-index: 5;
 
 	h2 {
 		text-transform: uppercase;
 		letter-spacing: 10px;
-		line-height: 0;
+		line-height: 1;
 		font-size: 60px;
 		// font-style: italic;
 	}
@@ -38,17 +38,17 @@
 	height: 100%;
 	width: 100%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	align-items: flex-end;
 	gap: 30px;
 
-	@media (max-width: 425px) {
+	@media (max-width: 650px) {
 		flex-direction: column;
 		align-items: center;
 	}
 }
 
-.skills,
+
 .txt_w,
 .img_w {
 	flex: 1;
@@ -59,8 +59,16 @@
 
 	// Need to fix
 	p {
-		font-size: 13px;
+		font-size: 16px;
 		text-align: justify;
+
+		@media (max-width: 425px) {
+			font-size: 12px;
+		}
+
+		@media (min-width:426px) and (max-width: 768px) {
+			font-size: 12px;
+		}
 	}
 
 	@media (max-width: 425px) {
@@ -70,6 +78,7 @@
 
 .img_w {
 	position: relative;
+	max-width: 400px;
 
 	@media (max-width: 425px) {
 		padding-top: 50px;
@@ -92,11 +101,6 @@
 	}
 }
 
-.skills {
-	@media(max-width: 768px) {
-		display: none;
-	}
-}
 
 .cta {
 	width: fit-content;

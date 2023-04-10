@@ -2,7 +2,9 @@ import emailjs from "@emailjs/browser";
 import {ErrorMessage, Field, Form, Formik} from "formik";
 import * as Yup from "yup";
 
-export default function ContactForm({classForm, classSubmit}) {
+import style from "./contactFormStyle.module.scss";
+
+export default function ContactForm() {
 	return (
 		<Formik
 			initialValues={{
@@ -14,7 +16,9 @@ export default function ContactForm({classForm, classSubmit}) {
 			}}
 			validationSchema={Yup.object({
 				from_name: Yup.string().required("Required"),
-				reply_to: Yup.string().email("Invalid email address").required("Required"),
+				reply_to: Yup.string()
+					.email("Invalid email address")
+					.required("Required"),
 				message: Yup.string()
 					.max(120, "Must be 120 characters or less")
 					.required("Required"),
@@ -38,7 +42,7 @@ export default function ContactForm({classForm, classSubmit}) {
 					);
 			}}
 		>
-			<Form className={classForm}>
+			<Form className={style.form}>
 				<label htmlFor="from_name">
 					<Field type="text" name="from_name" placeholder="My name is: " />
 					<ErrorMessage name="from_name" />
@@ -56,7 +60,7 @@ export default function ContactForm({classForm, classSubmit}) {
 					/>
 					<ErrorMessage name="message" />
 				</label>
-				<button type="submit" className={classSubmit}>
+				<button type="submit" className={style.submit}>
 					Send
 				</button>
 			</Form>

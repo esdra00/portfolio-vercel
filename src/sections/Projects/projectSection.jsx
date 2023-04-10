@@ -34,8 +34,8 @@ export default function ProjectSection() {
 	};
 
 	return (
-		<div className={style.section} id="projects">
-			<div className={style.title}>
+		<section className={style.section} id="projects">
+			<header className={style.title}>
 				<motion.span
 					className={style.line}
 					initial="left"
@@ -53,11 +53,11 @@ export default function ProjectSection() {
 					variants={line}
 					style={{originX: 0}}
 				></motion.span>
-			</div>
+			</header>
 			<div className={style.container}>
 				<ProjectCard />
 			</div>
 			<button className={style.cta}>more work</button>
-		</div>
+		</section>
 	);
 }

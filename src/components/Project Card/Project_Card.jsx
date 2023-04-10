@@ -64,11 +64,12 @@ export default function ProjectCard() {
 			{projectsData &&
 				projectsData.map((project) => {
 					return (
-						<div
+						<article
 							className={`${style.container} ${
 								project.id % 2 == 0 ? style.reverse : ""
 							}`}
 							key={project.id}
+							tabIndex={0}
 						>
 							<motion.div
 								className={style.txt_w}
@@ -103,7 +104,7 @@ export default function ProjectCard() {
 									width={1440}
 								/>
 							</motion.div>
-						</div>
+						</article>
 					);
 				})}
 		</>

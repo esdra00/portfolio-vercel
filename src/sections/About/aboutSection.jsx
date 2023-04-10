@@ -1,7 +1,7 @@
 import {motion, useAnimation, useInView} from "framer-motion";
 import {useEffect, useRef} from "react";
-import style from "./aboutSectionStyle.module.scss";
 import profilePicture from "../../assets/_shirt - no bg - cropped.png";
+import style from "./aboutSectionStyle.module.scss";
 
 export default function AboutSection() {
 	const ref = useRef(null);
@@ -35,7 +35,7 @@ export default function AboutSection() {
 	};
 
 	return (
-		<section className={style.section} id="about" ref={ref}>
+		<section className={style.section} id="about" ref={ref} tabIndex={0}>
 			<div className={style.section_w}>
 				<motion.header
 					className={style.title}
@@ -46,21 +46,6 @@ export default function AboutSection() {
 					<h2>About</h2>
 				</motion.header>
 				<div className={style.content}>
-					<div className={style.skills}>
-						<ul>
-							<div className={style.line}></div>
-							<div>Design:</div>
-							<li>Figma, Webflow, Gimp</li>
-							<div className={style.line}></div>
-							<div>Style:</div>
-							<li>
-								Bootstrap, Tailwind, Sass, Styled Components...
-							</li>
-							<div className={style.line}></div>
-							<div>Code:</div>
-							<li>React, Next.js, Typescript...</li>
-						</ul>
-					</div>
 					<motion.div
 						className={style.img_w}
 						initial="image"

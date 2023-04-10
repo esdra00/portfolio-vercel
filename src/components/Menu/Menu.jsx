@@ -32,8 +32,12 @@ export default function Menu() {
 	return (
 		<>
 			<header className={style.menu} id="navMenu">
-				<Link to="/portfolioPROD/" className={style.logo}>
-					<img src={logo} />
+				<Link
+					to="/portfolioPROD/"
+					className={style.logo}
+					aria-label="Website logo"
+				>
+					<img src={logo} alt="website logo" />
 				</Link>
 				<div className={style.line}></div>
 				<Nav classname={style.navMenu} />
