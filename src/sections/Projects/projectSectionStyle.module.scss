@@ -1,0 +1,96 @@
+@import "src/sass/mixins";
+
+.section {
+	@include section;
+	height: auto;
+
+	@media (min-width: 1440px) {
+		padding-inline: 235px;
+	}
+}
+
+.container {
+	@include container;
+	padding: 0;
+	gap: 100px;
+	align-items: center;
+
+	@media (max-width: 425px) {
+		padding: 10px;
+		gap: 50px;
+	}
+
+	// @media (min-width: 426px) and (max-width: 650px) {
+	// 	flex-direction: row;
+	// 	flex-wrap: wrap;
+	// 	gap: 30px;
+	// }
+}
+
+.title {
+	@include titleSection(50px);
+
+	flex-direction: column;
+
+	h2 {
+		font-size: 60px
+	}
+}
+
+.line {
+	@include lineTitle;
+}
+
+.cta {
+	text-transform: uppercase;
+	display: block;
+	margin-top: 70px;
+	margin-inline: auto;
+	padding: 15px;
+	padding-inline: 20px;
+	border: 1px solid var(--txt);
+	border-radius: 20px;
+}
+
+.carousel {
+	// display: flex;
+	// flex-wrap: wrap;
+	// gap: 15px;
+	// width: auto;
+	padding-block: 50px;
+	overflow: hidden;
+
+}
+
+.container_car {
+	margin: 0 auto;
+	width: calc(330px * 4);
+	position: relative;
+	left: -165px;
+
+
+	@media (max-width: 425px) {
+		width: calc(200px * 4);
+	}
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.carousel_img {
+	padding: 1.25vw;
+	width: 25%;
+	// height: 200px;
+
+	// width: 330px;
+	// background-color: var(--txt);
+	img {
+		height: auto;
+		width: 100%;
+		aspect-ratio: auto;
+		border: 1px solid black;
+	}
+}

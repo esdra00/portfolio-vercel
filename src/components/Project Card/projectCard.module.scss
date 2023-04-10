@@ -1,0 +1,158 @@
+@import "src/sass/mixins";
+
+/* PROJECT CARD COMPONENT STYLE */
+
+.container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	@media (max-width: 425px) {
+		width: auto;
+		max-width: 300px;
+
+		padding: 20px;
+		border-radius: 10px;
+		border: 1px solid var(--txt);
+		box-shadow: 5px 5px 0px 5px var(--txt);
+
+		flex-direction: column-reverse !important; // !important to override reverse card style
+	}
+
+	@media (min-width: 426px) and (max-width: 768px) {
+		max-width: 400px;
+		flex-direction: column-reverse;
+	}
+
+	@media (min-width: 1440px) {
+		gap: 100px;
+	}
+}
+
+.reverse {
+	flex-direction: row-reverse;
+	text-align: right;
+
+	ul {
+		flex-direction: row-reverse;
+		text-align: right;
+	}
+
+	.image {
+		box-shadow: -5px 5px 0px 5px var(--txt);
+
+		@media (max-width: 425px) {
+			box-shadow: none;
+		}
+
+		@media (min-width: 426px) and (max-width: 768px) {
+			box-shadow: 5px 5px 0px 5px var(--txt);
+		}
+	}
+
+	@media (min-width: 426px) and (max-width: 768px) {
+		flex-direction: column-reverse;
+	}
+}
+
+.txt_w {
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	flex: 1;
+
+	h3::after {
+		content: "";
+		display: inline-block;
+		margin-left: 5px;
+		background-image: url("../../assets/social media icon/8666682_external_link_icon.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		height: 20px;
+		width: 20px;
+	}
+
+	>.line {
+		@include lineTitle;
+		height: 1px;
+		background-color: var(--txt);
+		background-image: none;
+		// opacity: 70%;
+		margin: 0;
+
+		// @media (min-width: 769px) {
+		// 	display: none;
+		// }
+	}
+
+	@media (max-width: 425px) {
+		flex: auto;
+	}
+
+	@media (max-width: 768px) {
+		align-items: center;
+		text-align: center;
+	}
+}
+
+.image_w {
+	text-align: center;
+	flex: 0.9;
+
+	@media (min-width: 769px) and (max-width: 1024px) {
+		flex: 0.7;
+	}
+
+	@media (min-width: 1440px) {
+		flex: 0.7;
+	}
+}
+
+.framework_list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 15px;
+
+	@media (max-width: 425px) {
+		justify-content: center;
+		row-gap: 10px;
+	}
+}
+
+.framework {
+	padding: 2.5px;
+	border-radius: 5px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: var(--cta-txt);
+	background-color: var(--cta-bg);
+
+	@media (max-width: 425px) {
+		font-size: 10px;
+	}
+}
+
+.image {
+	@include image(5px);
+
+	// already in mixins ???
+	// transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+	// &:hover {
+	// 	transform: scale(1.05);
+	// }
+
+	@media (max-width: 425px) {
+		height: auto;
+		width: 100%;
+		flex: auto;
+		box-shadow: none;
+	}
+
+	@media (min-width: 426px) and (max-width: 768px) {
+		height: auto;
+		width: 100%;
+	}
+}

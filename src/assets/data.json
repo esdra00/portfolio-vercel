@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1,
+		"title": "Multi Step Form",
+		"Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui delectus repellendus maxime a nihil veritatis atque debitis pariatur, accusamus, labore dolorum? Nulla facilis qui illo, esse non nemo at quibusdam error ipsum eius harum minus iure? Laborum, consequatur sapiente hic dolor eligendi velit ipsum nulla sunt ex ipsa assumenda?",
+		"Preview": "desktop-preview.jpg",
+		"Frameworks": ["Next", "Bootstrap", "Javascript", "React"],
+		"Orientation": "reverse"
+	},
+	{
+		"id": 2,
+		"title": "IP Address Tracker",
+		"Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui delectus repellendus maxime a nihil veritatis atque debitis pariatur, accusamus, labore dolorum? Nulla facilis qui illo, esse non nemo at quibusdam error ipsum eius harum minus iure? Laborum, consequatur sapiente hic dolor eligendi velit ipsum nulla sunt ex ipsa assumenda?",
+		"Preview": "desktop-preview 2.jpg",
+		"Frameworks": ["Next", "Bootstrap", "React"],
+		"Orientation": ""
+	},
+	{
+		"id": 3,
+		"title": "REST Country API",
+		"Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui delectus repellendus maxime a nihil veritatis atque debitis pariatur, accusamus, labore dolorum? Nulla facilis qui illo, esse non nemo at quibusdam error ipsum eius harum minus iure? Laborum, consequatur sapiente hic dolor eligendi velit ipsum nulla sunt ex ipsa assumenda?",
+		"Preview": "desktop-preview 3.jpg",
+		"Frameworks": ["Javascript", "React"],
+		"Orientation": "reverse"
+	},
+	{
+		"id": 4,
+		"title": "Interactive Comment Section",
+		"Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui delectus repellendus maxime a nihil veritatis atque debitis pariatur, accusamus, labore dolorum? Nulla facilis qui illo, esse non nemo at quibusdam error ipsum eius harum minus iure? Laborum, consequatur sapiente hic dolor eligendi velit ipsum nulla sunt ex ipsa assumenda?",
+		"Preview": "desktop-preview 4.jpg",
+		"Frameworks": ["Next", "Bootstrap"],
+		"Orientation": ""
+	}
+]

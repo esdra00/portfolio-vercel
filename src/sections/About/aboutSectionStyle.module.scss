@@ -1,0 +1,134 @@
+@import "src/sass/mixins";
+
+.section {
+	@include section;
+	height: auto;
+	min-height: auto;
+}
+
+.section_w {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	position: absolute;
+	top: 0;
+	left: 150px;
+	z-index: 5;
+
+	h2 {
+		text-transform: uppercase;
+		letter-spacing: 10px;
+		line-height: 0;
+		font-size: 60px;
+		// font-style: italic;
+	}
+
+	@media (max-width: 425px) {
+		left: unset;
+		margin: 0;
+	}
+}
+
+.content {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	gap: 30px;
+
+	@media (max-width: 425px) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.skills,
+.txt_w,
+.img_w {
+	flex: 1;
+}
+
+.txt_w {
+	text-align: center;
+
+	// Need to fix
+	p {
+		font-size: 13px;
+		text-align: justify;
+	}
+
+	@media (max-width: 425px) {
+		padding-inline: 15px;
+	}
+}
+
+.img_w {
+	position: relative;
+
+	@media (max-width: 425px) {
+		padding-top: 50px;
+	}
+
+	// @media (max-width: 650px) {
+	// 	 display: none;
+	// }
+}
+
+.image {
+	@include image;
+	// max-height: 340px;
+	background-color: var(--cta-bg);
+	box-shadow: none !important;
+	border-radius: 5px;
+
+	@media (max-width: 650px) {
+		max-height: 300px;
+	}
+}
+
+.skills {
+	@media(max-width: 768px) {
+		display: none;
+	}
+}
+
+.cta {
+	width: fit-content;
+	display: block;
+	margin-top: 50px;
+	margin-inline: auto;
+	padding: 15px;
+	padding-inline: 20px;
+	border: 1px solid var(--txt);
+	border-radius: 20px;
+	font-size: 12px;
+	text-transform: uppercase;
+
+	&:hover {
+		border-color: var(--bg);
+		background-color: var(--cta-bg);
+		color: var(--txt-secondary);
+	}
+
+	@media (max-width: 425px) {
+		margin-top: 30px;
+		padding: 10px;
+		padding-inline: 15px;
+	}
+}
+
+.line {
+	@include lineTitle;
+	margin-inline: 0;
+	margin-bottom: 10px;
+}
+
+ul {
+	font-size: 12px;
+}
