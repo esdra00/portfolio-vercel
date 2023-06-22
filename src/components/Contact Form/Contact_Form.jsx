@@ -43,20 +43,21 @@ export default function ContactForm() {
 			}}
 		>
 			<Form className={style.form}>
-				<label htmlFor="from_name">
+				<label htmlFor="from_name"  className={style.name}>
 					<Field type="text" name="from_name" placeholder="My name is: " />
 					<ErrorMessage name="from_name" />
 				</label>
-				<label htmlFor="reply_to">
+				<label htmlFor="reply_to" className={style.mail}>
 					<Field type="text" name="reply_to" placeholder="My email is: " />
 					<ErrorMessage name="reply_to" />
 				</label>
-				<label htmlFor="message">
+				<label htmlFor="message" className={style.message}>
 					<Field
 						type="text"
 						as="textarea"
 						name="message"
 						placeholder="Your message"
+						rows={5}
 					/>
 					<ErrorMessage name="message" />
 				</label>

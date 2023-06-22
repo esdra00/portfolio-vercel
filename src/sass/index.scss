@@ -216,3 +216,12 @@ p {
 	background-color: var(--cta-bg);
 	z-index: 20000;
 }
+
+::placeholder {
+	color: white;
+	font-size: 14px;
+
+	@media (max-width:425px) {
+		font-size: 12px;
+	}
+}

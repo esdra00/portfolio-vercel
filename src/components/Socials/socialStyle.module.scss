@@ -44,5 +44,8 @@
 .line {
 	@include lineTitle(100px, 2px);
 	background-image: linear-gradient(to right, var(--bg) 50%, var(--bg-secondary) 50%);
+	background-image: none;
+	width: 1px;
+	background-color: var(--bg-secondary);
 	margin: 0;
 }

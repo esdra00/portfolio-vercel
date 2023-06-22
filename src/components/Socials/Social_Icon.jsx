@@ -1,7 +1,7 @@
-import linkedLogo from "../../assets/social media icon/104493_linkedin_icon 1.svg";
-import gmailLogo from "../../assets/social media icon/1181190_email_gmail_google_mail_icon 1.svg";
-import githubLogo from "../../assets/social media icon/394187_github_icon 1.svg";
-import whatsappLogo from "../../assets/social media icon/843786_whatsapp_icon 1.svg";
+import linkedLogo from "../../assets/social media icon/macth to bg black/104493_linkedin_icon 1.svg";
+import gmailLogo from "../../assets/social media icon/macth to bg black/1181190_email_gmail_google_mail_icon 1.svg";
+import githubLogo from "../../assets/social media icon/macth to bg black/394187_github_icon 1.svg";
+import whatsappLogo from "../../assets/social media icon/macth to bg black/843786_whatsapp_icon 1.svg";
 
 const Comp = ({img, link, className}) => {
 	return (

@@ -61,6 +61,7 @@ export default function ContactSection() {
 								each other!
 							</h2>
 						</motion.header>
+						<div>
 						<motion.p
 							className={style.desc}
 							initial="title"
@@ -72,7 +73,6 @@ export default function ContactSection() {
 							<br />
 							Please let me know.
 						</motion.p>
-						<div>
 							<ContactForm />
 						</div>
 						<footer>
