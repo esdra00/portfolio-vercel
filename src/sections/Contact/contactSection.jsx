@@ -5,8 +5,10 @@ import style from "./contactSectionStyle.module.scss";
 
 const box = {
 	initial: {
-		y: 100,
-		scaleX: 0.8,
+		// y: 100,
+		// scaleX: 0.8,
+		y: 0,
+		scaleX: 1,
 	},
 	inView: {
 		y: 0,
@@ -62,17 +64,17 @@ export default function ContactSection() {
 							</h2>
 						</motion.header>
 						<div>
-						<motion.p
-							className={style.desc}
-							initial="title"
-							whileInView="inView"
-							variants={txt}
-						>
-							Do you have any question? Are you interested in working
-							with me? Do you have any suggestion?
-							<br />
-							Please let me know.
-						</motion.p>
+							<motion.p
+								className={style.desc}
+								initial="title"
+								whileInView="inView"
+								variants={txt}
+							>
+								Do you have any question? Are you interested in
+								working with me? Do you have any suggestion?
+								<br />
+								Please let me know.
+							</motion.p>
 							<ContactForm />
 						</div>
 						<footer>

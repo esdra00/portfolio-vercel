@@ -2,9 +2,9 @@
 	{
 		"id": 1,
 		"title": "Multi Step Form",
-		"Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui delectus repellendus maxime a nihil veritatis atque debitis pariatur, accusamus, labore dolorum? Nulla facilis qui illo, esse non nemo at quibusdam error ipsum eius harum minus iure? Laborum, consequatur sapiente hic dolor eligendi velit ipsum nulla sunt ex ipsa assumenda?",
+		"Description": "A simple Multi Step Form built with React Typescript in combination with Formik and  Yup, respectively a React form libary and a schema builder. It features different input types, validation, and a summary of users selection before submission.",
 		"Preview": "multi-step-form.jpg",
-		"Frameworks": ["Next", "Bootstrap", "Javascript", "React"],
+		"Frameworks": ["React", "Typescript", "Sass", "Yup", "Formik"],
 		"Orientation": "reverse"
 	},
 	{
