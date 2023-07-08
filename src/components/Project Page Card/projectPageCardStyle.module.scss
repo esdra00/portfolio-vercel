@@ -1,0 +1,119 @@
+@import "src/sass/mixins";
+
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   flex-direction: column-reverse;
+   gap: 20px;
+
+   // width: 100%;
+   // max-width: 320px;
+   max-width: 40%;
+
+   padding: 12px;
+   border-radius: 10px;
+   // border: 2px solid var(--cta-bg);
+   background-color: var(--bg);
+
+
+   @media (max-width: 650px) {
+      max-width: 80%;
+   }
+
+   @media (min-width: 769px) and (max-width: 1024px) {
+      max-width: 260px;
+   }
+}
+
+.txt_w {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   text-align: center;
+
+   >.line {
+      @include line;
+      background-color: var(--txt);
+      display: block;
+      opacity: 100%;
+      margin: 0;
+   }
+}
+
+.title {
+   font-size: 20px;
+   color: var(--txt);
+
+
+   &::after {
+      content: "";
+      display: inline-block;
+      margin-left: 5px;
+      background-image: url("/src/assets/social media icon/8666682_external_link_icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      height: 20px;
+      width: 20px;
+   }
+}
+
+.framework_list {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   column-gap: 10px;
+   row-gap: 10px;
+}
+
+.framework {
+   // tutto uguale tranne font size
+   padding: 3.5px;
+   border-radius: 5px;
+   font-size: 10px;
+   text-transform: uppercase;
+
+   // option 1
+   // color: var(--cta-txt);
+   // background-color: var(--cta-bg);
+
+   // option 2
+   color: black;
+   background-color: transparent;
+   border: 1px solid black;
+
+   @media (max-width: 425px) {
+      font-size: 10px;
+   }
+}
+
+.image_w {
+      border-radius: 5px;
+         border: 1px solid var(--txt);
+   text-align: center;
+   flex: 0.9;
+   overflow: hidden;
+
+   @media (min-width: 769px) and (max-width: 1024px) {
+      flex: 0.7;
+   }
+}
+
+.image {
+   // @include image(5px);
+   height: 100%;
+   width: 100%;
+   aspect-ratio: auto;
+
+
+   @media (min-width: 769px) {
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+      &:hover {
+         transform: scale(1.1);
+      }
+   }
+
+}

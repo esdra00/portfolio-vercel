@@ -1,0 +1,25 @@
+@import "src/sass/mixins";
+
+.container {
+   @include section;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 180px;
+   gap: 50px;
+}
+
+.img {
+   max-height: 700px;
+   border-radius: 10px;
+   background-color: red;
+}
+
+.title {
+   text-transform: uppercase;
+   font-size: 60px;
+}
+.desc {
+   padding-inline: 50px;
+   text-align: center;
+}

@@ -1,5 +1,5 @@
 import {motion, useIsPresent} from "framer-motion";
-import ContactSection from "../sections/Contact/contactSection";
+import ContactSection from "/src/components/Sections/Contact/contactSection";
 
 export default function ContactPage() {
 	const isPresent = useIsPresent();

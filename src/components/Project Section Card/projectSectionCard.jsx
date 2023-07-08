@@ -2,12 +2,7 @@ import {motion} from "framer-motion";
 import projectsData from "../../assets/data.json";
 import style from "./projectCard.module.scss";
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// add key: id to second iteration
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-// with animation
-export default function ProjectCard() {
+export default function ProjectSectionCard() {
 	const image =
 		window.innerWidth > 768
 			? {
@@ -83,7 +78,10 @@ export default function ProjectCard() {
 								<ul className={style.framework_list}>
 									{project.Frameworks.map((framework) => {
 										return (
-											<li className={style.framework}>
+											<li
+												className={style.framework}
+												key={framework}
+											>
 												{framework}
 											</li>
 										);

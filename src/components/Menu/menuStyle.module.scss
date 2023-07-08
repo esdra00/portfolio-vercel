@@ -31,10 +31,13 @@
 	gap: 30px;
 	padding: 10px;
 	border-radius: 10px;
-	border: 1px solid var(--bg);
+	border: 1px solid var(--cta-bg);
+	border: 1px solid var(--txt);
+	background-color: var(--bg);
 
 	a {
 		@include link_underline;
+		color: var(--txt);
 	}
 
 	@media (max-width: 425px) {
@@ -55,7 +58,7 @@ nav {
 }
 
 .line {
-	@include lineTitle;
+	@include line;
 	// outline: 0.25px solid var(--bg);
 }
 

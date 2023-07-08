@@ -1,7 +1,5 @@
 @import "src/sass/mixins";
 
-/* PROJECT CARD COMPONENT STYLE */
-
 .container {
 	width: 100%;
 	display: flex;
@@ -12,7 +10,7 @@
 		width: auto;
 		max-width: 300px;
 
-		padding: 20px;
+		padding: 0px;
 		border-radius: 10px;
 		// border: 1px solid var(--txt);
 		// box-shadow: 5px 5px 0px 5px var(--txt);
@@ -76,7 +74,7 @@
 	}
 
 	>.line {
-		@include lineTitle;
+		@include line;
 		height: 1px;
 		background-color: var(--txt);
 		background-image: none;
@@ -118,14 +116,16 @@
 
 	@media (max-width: 425px) {
 		justify-content: center;
-		row-gap: 10px;
+		row-gap: 5px;
+		column-gap: 10px;
 	}
 }
 
 .framework {
-	padding: 2.5px;
+	padding: 4px 8px;
 	border-radius: 5px;
 	font-size: 12px;
+	font-weight: 600;
 	text-transform: uppercase;
 	color: var(--cta-txt);
 	background-color: var(--cta-bg);

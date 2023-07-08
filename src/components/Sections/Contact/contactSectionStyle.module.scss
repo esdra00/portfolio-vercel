@@ -109,7 +109,7 @@ footer {
 	text-align: center;
 
 	.line {
-		@include lineTitle;
+		@include line;
 
 		background-color: white;
 		opacity: 50%;

@@ -1,6 +1,6 @@
 import {motion, useScroll, useTransform} from "framer-motion";
 import {useRef} from "react";
-import ContactForm from "../../components/Contact Form/Contact_Form";
+import ContactForm from "/src/components/Contact Form/Contact_Form";
 import style from "./contactSectionStyle.module.scss";
 
 const box = {

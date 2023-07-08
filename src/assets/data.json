@@ -3,7 +3,7 @@
 		"id": 1,
 		"title": "Multi Step Form",
 		"Description": "A simple Multi Step Form built with React Typescript in combination with Formik and  Yup, respectively a React form libary and a schema builder. It features different input types, validation, and a summary of users selection before submission.",
-		"Preview": "multi-step-form.jpg",
+		"Preview": "multi step form - 1.jpg",
 		"Frameworks": ["React", "Typescript", "Sass", "Yup", "Formik"],
 		"Orientation": "reverse"
 	},
@@ -11,7 +11,7 @@
 		"id": 2,
 		"title": "IP Address Tracker",
 		"Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui delectus repellendus maxime a nihil veritatis atque debitis pariatur, accusamus, labore dolorum? Nulla facilis qui illo, esse non nemo at quibusdam error ipsum eius harum minus iure? Laborum, consequatur sapiente hic dolor eligendi velit ipsum nulla sunt ex ipsa assumenda?",
-		"Preview": "ip-address-tracker.jpg",
+		"Preview": "ip address tracker - 1.jpg",
 		"Frameworks": ["Next", "Bootstrap", "React"],
 		"Orientation": ""
 	},
@@ -19,7 +19,7 @@
 		"id": 3,
 		"title": "REST Country API",
 		"Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui delectus repellendus maxime a nihil veritatis atque debitis pariatur, accusamus, labore dolorum? Nulla facilis qui illo, esse non nemo at quibusdam error ipsum eius harum minus iure? Laborum, consequatur sapiente hic dolor eligendi velit ipsum nulla sunt ex ipsa assumenda?",
-		"Preview": "rest-country-api.jpg",
+		"Preview": "Rest country api - 1.jpg",
 		"Frameworks": ["Javascript", "React"],
 		"Orientation": "reverse"
 	},
@@ -27,7 +27,7 @@
 		"id": 4,
 		"title": "Interactive Comment Section",
 		"Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui delectus repellendus maxime a nihil veritatis atque debitis pariatur, accusamus, labore dolorum? Nulla facilis qui illo, esse non nemo at quibusdam error ipsum eius harum minus iure? Laborum, consequatur sapiente hic dolor eligendi velit ipsum nulla sunt ex ipsa assumenda?",
-		"Preview": "interactive-comment-section.jpg",
+		"Preview": "interactive comment section - 1.jpg",
 		"Frameworks": ["Next", "Bootstrap"],
 		"Orientation": ""
 	}

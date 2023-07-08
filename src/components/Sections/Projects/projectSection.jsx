@@ -1,6 +1,6 @@
 import {motion} from "framer-motion";
-import ProjectCard from "../../components/Project Card/Project_Card";
 import style from "./projectSectionStyle.module.scss";
+import ProjectSectionCard from "/src/components/Project Section Card/projectSectionCard";
 
 export default function ProjectSection() {
 	const title = {
@@ -44,7 +44,7 @@ export default function ProjectSection() {
 					style={{originX: 1}}
 				></motion.span>
 				<motion.h2 initial="title" whileInView="inView" variants={title}>
-					Project
+					Projects
 				</motion.h2>
 				<motion.span
 					className={style.line}
@@ -55,7 +55,7 @@ export default function ProjectSection() {
 				></motion.span>
 			</header>
 			<div className={style.container}>
-				<ProjectCard />
+				<ProjectSectionCard />
 			</div>
 			<button className={style.cta}>more work</button>
 		</section>

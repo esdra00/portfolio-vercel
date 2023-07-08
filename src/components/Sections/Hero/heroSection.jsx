@@ -5,7 +5,6 @@ export default function HeroSection() {
 		<div className={style.section}>
 			<div className={style.container}>
 				<div className={style.hero}>
-					{/* <h3>Hi, my name is</h3> */}
 					<h1>Esdra Bergamasco</h1>
 					<h2>Front-end Web Developer</h2>
 				</div>
