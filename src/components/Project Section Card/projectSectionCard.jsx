@@ -5,7 +5,7 @@ import style from "./projectCard.module.scss";
 
 export default function ProjectSectionCard() {
 	return (
-		<LazyMotion features={domAnimation}>
+		<>
 			{projectsData &&
 				projectsData.map((project) => {
 					return (
@@ -55,6 +55,6 @@ export default function ProjectSectionCard() {
 						</article>
 					);
 				})}
-		</LazyMotion>
+		</>
 	);
 }

@@ -1,15 +1,18 @@
-import {LazyMotion, domAnimation, m, useIsPresent} from "framer-motion";
+import {LazyMotion, m, useIsPresent} from "framer-motion";
 import Carousel from "../components/Carousel/Carousel";
 import AboutSection from "../components/Sections/About/aboutSection";
 import ContactSection from "../components/Sections/Contact/contactSection";
 import HeroSection from "../components/Sections/Hero/heroSection";
 import ProjectSection from "../components/Sections/Projects/projectSection";
 
+const loadFeatures = () =>
+	import("/src/components/Framer/features.js").then((res) => res.default);
+
 export default function HomePage() {
 	const isPresent = useIsPresent();
 
 	return (
-		<LazyMotion features={domAnimation} strict>
+		<LazyMotion features={loadFeatures} strict>
 			<div className="App">
 				<HeroSection />
 				<AboutSection />
