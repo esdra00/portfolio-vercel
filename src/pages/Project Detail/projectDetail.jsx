@@ -9,7 +9,14 @@ export default function ProjectDetail() {
 	return (
 		<div className={style.container}>
 			<h2 className={style.title}>{data?.title}</h2>
-			<img src={`/public/${data?.preview}`} className={style.img} />
+			<img
+				// src={`/public/${data?.preview}`}
+				src={data?.preview}
+				className={style.img}
+				// alt=""
+				// height={1056}
+				// width={1440}
+			/>
 			<p className={style.desc}>{data?.description}</p>
 			<div className={style.buttons_w}>
 				<div className={style.button1}>Button</div>
