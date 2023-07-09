@@ -1,51 +1,28 @@
-import {motion} from "framer-motion";
+import {m} from "framer-motion";
 import {useRef} from "react";
 import profilePicture from "../../../assets/pfp.png";
+import {aboutSection} from "../../Framer/animation";
 import style from "./aboutSectionStyle.module.scss";
 
 export default function AboutSection() {
 	const ref = useRef(null);
 
-	const content = {
-		title: {
-			x: -100,
-			opacity: 0,
-		},
-		image: {
-			x: 100,
-			opacity: 0,
-			transition: {delay: 5},
-		},
-		txt: {
-			x: -200,
-			opacity: 0,
-		},
-		inView: {
-			x: 0,
-			opacity: 1,
-			transition: {
-				type: "spring",
-				duration: 2,
-				bounce: 0.3,
-			},
-		},
-	};
-
 	return (
+		// <LazyMotion features={domAnimation}>
 		<section className={style.section} id="about" ref={ref} tabIndex={0}>
 			<div className={style.container}>
-				<motion.header
+				<m.header
 					initial="title"
 					whileInView="inView"
-					variants={content}
+					variants={aboutSection}
 				>
 					<h2 className={style.header}>About</h2>
-				</motion.header>
-				<motion.div
+				</m.header>
+				<m.div
 					className={style.img_w}
 					initial="image"
 					whileInView="inView"
-					variants={content}
+					variants={aboutSection}
 				>
 					<img
 						src={profilePicture}
@@ -54,14 +31,14 @@ export default function AboutSection() {
 						height={400}
 						width={200}
 					/>
-				</motion.div>
+				</m.div>
 				<div className={style.txt_w}>
 					<div className={style.line}></div>
-					<motion.p
+					<m.p
 						className={style.txt}
 						initial="txt"
 						whileInView="inView"
-						variants={content}
+						variants={aboutSection}
 					>
 						My name is <b>Esdra Bergamasco</b> and I am a Front End
 						Developer with a passion for web design.<br></br> My
@@ -73,10 +50,11 @@ export default function AboutSection() {
 						of smaller projects with the aim of showing off my skills, I
 						dedicated a considerable amount of time to this website, my
 						portfolio, as a cupiditate.
-					</motion.p>
+					</m.p>
 				</div>
 			</div>
 			<div className={style.cta}>resume</div>
 		</section>
+		// </LazyMotion>
 	);
 }

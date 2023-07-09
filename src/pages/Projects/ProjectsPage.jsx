@@ -1,4 +1,4 @@
-import {motion, useIsPresent} from "framer-motion";
+import {m, useIsPresent, LazyMotion, domAnimation} from "framer-motion";
 import {useState} from "react";
 import FilterButton from "../../components/Filter Button/filterButton";
 import ProjectPageCard from "../../components/Project Page Card/projectPageCard.jsx";
@@ -44,7 +44,7 @@ export default function ProjectsPage() {
 	};
 
 	return (
-		<>
+		<LazyMotion features={domAnimation} strict>
 			<div className={style.section}>
 				<div className={style.title_w}>
 					<h3>Projects</h3>
@@ -69,7 +69,7 @@ export default function ProjectsPage() {
 						<ProjectPageCard isActive={isActive} />
 					</div>
 				</div>
-				<motion.div
+				<m.div
 					initial={{scaleX: 1}}
 					animate={{
 						scaleX: 0,
@@ -81,8 +81,8 @@ export default function ProjectsPage() {
 					}}
 					style={{originX: isPresent ? 0 : 1}}
 					className="privacy-screen"
-				></motion.div>
+				></m.div>
 			</div>
-		</>
+		</LazyMotion>
 	);
 }

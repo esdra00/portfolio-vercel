@@ -1,7 +1,7 @@
-import {motion, useScroll, useTransform} from "framer-motion";
+import {m, useScroll, useTransform} from "framer-motion";
 import {useRef} from "react";
-import ContactForm from "/src/components/Contact Form/Contact_Form";
 import style from "./contactSectionStyle.module.scss";
+import ContactForm from "/src/components/Contact Form/Contact_Form";
 
 const box = {
 	initial: {
@@ -40,18 +40,18 @@ export default function ContactSection() {
 
 	return (
 		<>
-			<motion.div className={style.round_w} style={{height}}>
-				<motion.div className={style.round}></motion.div>
-			</motion.div>
+			<m.div className={style.round_w} style={{height}}>
+				<m.div className={style.round}></m.div>
+			</m.div>
 			<section className={style.section} ref={ref}>
 				<div className={style.container}>
-					<motion.div
+					<m.div
 						className={style.contactBox}
 						initial="initial"
 						whileInView="inView"
 						variants={box}
 					>
-						<motion.header
+						<m.header
 							className={style.title}
 							initial="title"
 							whileInView="inView"
@@ -62,9 +62,9 @@ export default function ContactSection() {
 								<br />
 								each other!
 							</h2>
-						</motion.header>
+						</m.header>
 						<div>
-							<motion.p
+							<m.p
 								className={style.desc}
 								initial="title"
 								whileInView="inView"
@@ -74,14 +74,14 @@ export default function ContactSection() {
 								working with me? Do you have any suggestion?
 								<br />
 								Please let me know.
-							</motion.p>
+							</m.p>
 							<ContactForm />
 						</div>
 						<footer>
 							<div className={style.line}></div>
 							Designed & Built by Esdra Bergamasco
 						</footer>
-					</motion.div>
+					</m.div>
 				</div>
 			</section>
 		</>
