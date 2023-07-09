@@ -1,25 +1,117 @@
 @import "src/sass/mixins";
 
 .container {
-   @include section;
    display: flex;
    flex-direction: column;
    align-items: center;
    padding-top: 180px;
+   padding-bottom: 150px;
+   padding-inline: 150px;
    gap: 50px;
+
+   @media (max-width: 425px) {
+      padding-inline: 15px;
+      padding-top: 100px;
+      padding-bottom: 75px;
+   }
+
+   @media (min-width: 426px) and (max-width: 768px) {
+      padding-inline: 30px;
+      padding-top: 125px;
+      padding-bottom: 75px;
+   }
+
+   @media (min-width: 769px) and (max-width: 1024px) {
+      padding-top: 150px;
+      padding-bottom: 100px;
+   }
 }
 
 .img {
    max-height: 700px;
    border-radius: 10px;
    background-color: red;
+
+   @media (max-width: 425px) {
+      max-height: 250px;
+   }
+
+   @media (min-width: 426px) and (max-width: 768px) {
+      height: auto;
+      width: 100%;
+      max-width: 525px;
+   }
+
+   @media (min-width: 769px) and (max-width: 1024px) {
+      max-height: 450px;
+   }
 }
 
 .title {
    text-transform: uppercase;
    font-size: 60px;
+
+   @media (max-width: 425px) {
+      font-size: 30px;
+   }
+
+   @media (min-width: 426px) and (max-width: 768px) {
+      font-size: 35px;
+   }
 }
+
 .desc {
-   padding-inline: 50px;
+   padding-inline: 50px; // 101 at this point just remove it
    text-align: center;
+
+   @media (max-width: 425px) {
+      padding-inline: 25px;
+   }
+
+   @media (min-width: 426px) and (max-width: 768px) {
+      padding-inline: 0;
+   }
+
+   @media (min-width: 769px) and (max-width: 1024px) {
+      padding-inline: 0;
+   }
+}
+
+.buttons_w {
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: auto auto;
+   row-gap: 50px;
+   column-gap: 100px;
+
+   @media (max-width: 425px) {
+      row-gap: 25px;
+      column-gap: 50px;
+   }
+
+   @media (min-width: 426px) and (max-width: 1024px) {
+      row-gap: 25px;
+      column-gap: 75px;
+   }
+}
+
+.button1,
+.button2,
+.button3 {
+   padding: 10px 25px;
+   border: 1px solid black;
+   border-radius: 10px;
+
+   &:hover {
+      cursor: pointer;
+      background-color: var(--cta-bg);
+      color: white;
+      border-color: white;
+   }
+}
+
+.button3 {
+   width: fit-content;
+   margin: auto;
+   grid-column: 1/3;
 }

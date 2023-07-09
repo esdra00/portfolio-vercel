@@ -29,7 +29,7 @@ export default function Layout() {
 		setLoading(true);
 		setTimeout(() => {
 			setLoading(false);
-		}, 2000);
+		}, 2500);
 	}, []);
 
 	// If page is in loading state, display
