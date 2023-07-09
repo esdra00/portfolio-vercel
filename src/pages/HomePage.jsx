@@ -3,7 +3,7 @@ import Carousel from "../components/Carousel/Carousel";
 import AboutSection from "../components/Sections/About/aboutSection";
 import ContactSection from "../components/Sections/Contact/contactSection";
 import HeroSection from "../components/Sections/Hero/heroSection";
-import ProjectSection from "../components/sections/Projects/projectSection";
+import ProjectSection from "../components/Sections/Projects/projectSection";
 
 export default function HomePage() {
 	const isPresent = useIsPresent();
