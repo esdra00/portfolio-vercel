@@ -10,8 +10,8 @@ export default function ProjectDetail() {
 		<div className={style.container}>
 			<h2 className={style.title}>{data?.title}</h2>
 			<img
-				// src={`/public/${data?.preview}`}
-				src={data?.preview}
+				src={`/${data?.preview}`}
+				// src={data?.preview}
 				className={style.img}
 				// alt=""
 				// height={1056}

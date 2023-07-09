@@ -19,7 +19,7 @@ export default function ErrorPage() {
 							doesn't exist.
 						</p>
 						<Link
-							to="/portfolioPROD/"
+							to="/"
 							className={style.ctaError}
 						>
 							<span class={style.circle}>
@@ -37,7 +37,7 @@ export default function ErrorPage() {
 					</div>
 					<div className={style.image_w}>
 						<img
-							src="src/assets/history-in-hd-e5eDHbmHprg-unsplash-2-large.jpg"
+							src="/src/assets/404-large.jpg"
 							alt=""
 							className={style.image}
 							height={3333}

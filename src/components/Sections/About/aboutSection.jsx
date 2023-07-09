@@ -1,6 +1,6 @@
 import {motion} from "framer-motion";
 import {useRef} from "react";
-import profilePicture from "../../../assets/_shirt - no bg - cropped.png";
+import profilePicture from "../../../assets/pfp.png";
 import style from "./aboutSectionStyle.module.scss";
 
 export default function AboutSection() {
