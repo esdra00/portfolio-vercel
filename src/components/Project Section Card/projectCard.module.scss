@@ -15,7 +15,7 @@
 		// border: 1px solid var(--txt);
 		// box-shadow: 5px 5px 0px 5px var(--txt);
 
-		flex-direction: column-reverse !important; // !important to override reverse card style
+		flex-direction: column-reverse !important; //101 !important to override reverse card style
 	}
 
 	@media (min-width: 426px) and (max-width: 768px) {
@@ -144,7 +144,7 @@
 
 .image {
 	@include image(5px);
-
+	border: none;
 	// already in mixins ???
 	// transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 	// &:hover {

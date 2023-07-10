@@ -1,8 +1,9 @@
 import {LazyMotion, domAnimation, useIsPresent} from "framer-motion";
 import {useState} from "react";
-import FilterButton from "../../components/Filter Button/filterButton";
+import FilterButton from "/src/components/_shared/Filter Button/filterButton";
+
 import ProjectPageCard from "../../components/Project Page Card/projectPageCard.jsx";
-import Transition from "../../components/shared/pageTransition";
+import Transition from "../../components/_shared/pageTransition";
 import style from "./projectsPageStyle.module.scss";
 
 export default function ProjectsPage() {
@@ -53,14 +54,11 @@ export default function ProjectsPage() {
 				</div>
 				<div className={style.content}>
 					<div className={style.filterBar}>
-						<div>
-							{/* <div className={style.cta}>filters</div> */}
-							<FilterButton
-								array={filters}
-								onclick={setActiveFilter}
-								classname={style.filter}
-							/>
-						</div>
+						<FilterButton
+							array={filters}
+							onclick={setActiveFilter}
+							classname={style.filter}
+						/>
 						<div className={style.line}></div>
 						<FilterButton
 							array={isActive}
@@ -68,9 +66,7 @@ export default function ProjectsPage() {
 							classname={style.activeFilter}
 						/>
 					</div>
-					<div className={style.projects_w}>
-						<ProjectPageCard isActive={isActive} />
-					</div>
+					<ProjectPageCard isActive={isActive} />
 				</div>
 				<Transition isPresent={isPresent} />
 			</div>

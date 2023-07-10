@@ -110,7 +110,8 @@
 	@include image;
 	// max-height: 340px;
 	background-color: var(--cta-bg);
-	box-shadow: none !important;
+	// box-shadow: none !important; 101
+	border: none;
 	border-radius: 5px;
 
 	@media (max-width: 650px) {

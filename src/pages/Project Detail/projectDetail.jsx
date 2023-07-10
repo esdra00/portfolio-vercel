@@ -1,6 +1,6 @@
 import {useParams} from "react-router-dom";
 import {useFetchID} from "../../hooks/useFetchId";
-import LinkCta from "../../components/shared/Link Cta/linkCta";
+import LinkCta from "../../components/_shared/Link Cta/linkCta";
 import style from "./projectDetailStyle.module.scss";
 
 export default function ProjectDetail() {

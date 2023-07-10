@@ -1,13 +1,15 @@
-- cta component separate
-- bouncy cta on click and hover
-
-
 - line component
-- button component
-- fix filter button project page
 
--add icon to detail links and submitted pop-up
+- change oultine when validation fails on Form
+- add error pop up  when submit fdails
 
+- add icon to detail links and submitted pop-up
+
+
+- animation: 
+   hero entry
+   about section
+   project section
 
 
 - optimizes image 

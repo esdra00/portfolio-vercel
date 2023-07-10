@@ -2,7 +2,7 @@ import {m, useScroll, useTransform} from "framer-motion";
 import {useRef} from "react";
 import {contact_box, contact_txt} from "../../../Framer/animation";
 import style from "./contactSectionStyle.module.scss";
-import ContactForm from "/src/components/shared/Contact Form/Contact_Form";
+import ContactForm from "/src/components/_shared/Contact Form/Contact_Form";
 
 export default function ContactSection({animation}) {
 	const ref = useRef(null);

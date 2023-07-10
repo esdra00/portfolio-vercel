@@ -33,8 +33,10 @@
    border-radius: 15px;
    border-color: var(--cta-txt);
    background-color: var(--cta-bg-hover);
+   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
    &:hover {
+      cursor: pointer;
       color: var(--cta-txt);
       background-color: var(--cta-bg);
       border-color: var(--cta-bg-hover);

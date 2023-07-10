@@ -1,29 +1,32 @@
 @import "src/sass/mixins";
 
+.projects_w {
+   width: 100%;
+   height: auto;
+   // min-height: 100svh;
+   // background-color: var(--txt);
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   column-gap: 20px;
+   row-gap: 50px;
+   margin-top: 50px;
+}
+
 .container {
    display: flex;
    align-items: center;
    justify-content: flex-end;
    flex-direction: column-reverse;
    gap: 20px;
-
-   // width: 100%;
-   // max-width: 320px;
    max-width: 40%;
-
    padding: 12px;
    border-radius: 10px;
-   // border: 2px solid var(--cta-bg);
    background-color: var(--bg);
-
 
    @media (max-width: 650px) {
       max-width: 80%;
    }
-
-   // @media (min-width: 769px) and (max-width: 1024px) {
-   //    max-width: 260px;
-   // }
 }
 
 .txt_w {
@@ -45,28 +48,22 @@
 .title {
    font-size: 20px;
    color: var(--txt);
+   display: flex;
+   align-items: center;
+   gap: 5px;
 
-   &:hover {
-      color: var(--cta-bg) !important;
-
-      a {
-
-         color: var(--cta-bg) !important;
-      }
-   }
-
-
-   &::after {
-      content: "";
-      display: inline-block;
-      margin-left: 5px;
-      background-image: url("/src/assets/social media icon/8666682_external_link_icon.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
+   svg {
       height: 20px;
       width: 20px;
    }
+
+   &:hover {
+      color: var(--cta-bg);
+      svg {
+         stroke: var(--cta-bg);
+      }
+   }
+
 }
 
 .framework_list {
@@ -78,20 +75,13 @@
 }
 
 .framework {
-   // tutto uguale tranne font size
    padding: 3.5px;
    border-radius: 5px;
    font-size: 10px;
    text-transform: uppercase;
-
-   // option 1
-   // color: var(--cta-txt);
-   // background-color: var(--cta-bg);
-
-   // option 2
-   color: black;
+   color: var(--txt);
    background-color: transparent;
-   border: 1px solid black;
+   border: 1px solid var(--txt);
 
    @media (max-width: 425px) {
       font-size: 10px;
@@ -103,11 +93,6 @@
    border: 1px solid var(--txt);
    text-align: center;
    overflow: hidden;
-
-   // flex: 0.9;
-   // @media (min-width: 769px) and (max-width: 1024px) {
-   //    flex: 0.7;
-   // }
 }
 
 .image {
@@ -116,7 +101,6 @@
    width: 100%;
    aspect-ratio: auto;
 
-
    @media (min-width: 769px) {
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
@@ -124,5 +108,4 @@
          transform: scale(1.1);
       }
    }
-
 }

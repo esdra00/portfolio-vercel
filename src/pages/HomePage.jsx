@@ -4,7 +4,7 @@ import Carousel from "../components/Homepage/Carousel/Carousel";
 import ContactSection from "../components/Homepage/Contact/contactSection";
 import HeroSection from "../components/Homepage/Hero/heroSection";
 import ProjectSection from "../components/Homepage/Projects/projectSection";
-import Transition from "../components/shared/pageTransition";
+import Transition from "../components/_shared/pageTransition";
 
 const loadFeatures = () => import("/src/Framer/features.js").then((res) => res.default);
 

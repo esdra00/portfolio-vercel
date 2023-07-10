@@ -1,5 +1,5 @@
 import {LazyMotion, domAnimation, useIsPresent} from "framer-motion";
-import Transition from "../components/shared/pageTransition";
+import Transition from "../components/_shared/pageTransition";
 import ContactSection from "/src/components/Homepage/Contact/contactSection";
 
 export default function ContactPage() {

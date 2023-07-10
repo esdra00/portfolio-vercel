@@ -118,6 +118,14 @@ textarea {
 	}
 }
 
+label.error {
+
+	input,
+	textarea {
+		border: 1px solid red;
+	}
+}
+
 .noScroll {
 	overflow: hidden;
 }

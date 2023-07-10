@@ -1,5 +1,5 @@
 import profilePicture from "../../../assets/pfp.png";
-import LinkCta from "../../shared/Link Cta/linkCta";
+import LinkCta from "../../_shared/Link Cta/linkCta";
 import style from "./aboutSectionStyle.module.scss";
 
 export default function AboutSection() {
