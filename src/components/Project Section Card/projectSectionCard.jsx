@@ -5,8 +5,7 @@ import style from "./projectCard.module.scss";
 
 export default function ProjectSectionCard() {
 	const {data} = useFetch();
-	
-	console.log(data)
+
 	return (
 		<>
 			{data?.map((project) => {
