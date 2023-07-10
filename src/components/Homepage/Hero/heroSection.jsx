@@ -9,10 +9,14 @@ export default function HeroSection() {
 					<h2>Front-end Web Developer</h2>
 				</div>
 				<a href="#about" className={style.cta}>
+					<div id={style.scrolldown}>
+						<span className={style.arrowdown}></span>
+						<span id={style.scrolltitle}>Scroll down</span>
+					</div>
+					{/* <div className={style.chevron}></div>
 					<div className={style.chevron}></div>
 					<div className={style.chevron}></div>
-					<div className={style.chevron}></div>
-					<span className={style.text}>Scroll down</span>
+					<span className={style.text}>Scroll down</span> */}
 				</a>
 			</div>
 		</div>

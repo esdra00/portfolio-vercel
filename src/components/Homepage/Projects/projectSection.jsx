@@ -1,3 +1,4 @@
+import LinkCta from "../../shared/Link Cta/linkCta";
 import style from "./projectSectionStyle.module.scss";
 import ProjectSectionCard from "/src/components/Project Section Card/projectSectionCard";
 
@@ -12,7 +13,7 @@ export default function ProjectSection() {
 			<div className={style.container}>
 				<ProjectSectionCard />
 			</div>
-			<button className={style.cta}>more work</button>
+			<LinkCta link={"https://github.com/esdra00"} text="More Work" />
 		</section>
 	);
 }

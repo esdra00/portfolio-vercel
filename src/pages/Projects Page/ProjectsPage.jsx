@@ -53,17 +53,19 @@ export default function ProjectsPage() {
 				</div>
 				<div className={style.content}>
 					<div className={style.filterBar}>
-						<button className={style.cta}>filter</button>
+						<div>
+							{/* <div className={style.cta}>filters</div> */}
+							<FilterButton
+								array={filters}
+								onclick={setActiveFilter}
+								classname={style.filter}
+							/>
+						</div>
+						<div className={style.line}></div>
 						<FilterButton
 							array={isActive}
 							onclick={removeActiveFilter}
 							classname={style.activeFilter}
-						/>
-						<div className={style.line}></div>
-						<FilterButton
-							array={filters}
-							onclick={setActiveFilter}
-							classname={style.filter}
 						/>
 					</div>
 					<div className={style.projects_w}>

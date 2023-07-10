@@ -28,6 +28,14 @@
 .title_w {
 	margin-bottom: 35px;
 
+	h3 {
+		font-size: 35px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
 	@media (max-width: 425px) {
 		padding-inline: 15px;
 	}
@@ -37,7 +45,8 @@
 	width: 100%;
 	height: auto;
 	background-color: var(--txt);
-	border-radius: 15px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	overflow: auto;
 	padding-bottom: 50px;
 }
@@ -47,18 +56,38 @@
 	flex-direction: column;
 	gap: 10px;
 	margin: 20px;
+
+	// 101 fix urgent
+	// 101 fix urgent
+	// 101 fix urgent
+	// 101 fix urgent
+	// 101 fix urgent
+	// 101 fix urgent
+	// 101 fix urgent
+	// 101 fix urgent
+	// 101 fix urgent
+	div {
+		ul {
+			display: inline-block;
+		}
+	}
 }
 
 .cta {
+	display: inline-block;
+	background-color: var(--bg);
 	margin-right: auto;
 	padding: 10px;
-	font-size: 20px;
+	font-size: 25px;
 	text-transform: uppercase;
 	border-radius: 5px;
+	color: var(--txt-secondary);
+	background-color: transparent;
 }
 
 .filter,
 .activeFilter {
+	font-size: 14px;
 	padding: 5px;
 	padding-inline: 10px;
 	margin-block: 5px;
@@ -71,6 +100,10 @@
 	color: var(--txt);
 	border: 1px solid var(--bg);
 	background-color: var(--bg);
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 .activeFilter {
@@ -79,10 +112,10 @@
 	&::after {
 		content: "";
 		background-color: var(--bg);
-		background-image: url("../assets/211651_close_round_icon 1.svg");
+		background-image: url("/src/assets/211651_close_round_icon 1.svg");
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 70%;
+		background-size: 60%;
 		height: 15px;
 		width: 15px;
 		position: absolute;

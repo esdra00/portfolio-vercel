@@ -207,10 +207,9 @@ p {
 	padding: 10px 20px;
 
 	&:hover {
-		background-color: var(--cta-bg-hover);
-		background-color: var(--bg-secondary);
+		background-color: #0B75B6;
 		cursor: pointer;
-		color: var(--cta-bg);
+		color: var(--txt-secondaryg);
 		border: 1px solid var(--cta-bg);
 	}
 }

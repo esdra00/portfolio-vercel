@@ -1,4 +1,5 @@
 import profilePicture from "../../../assets/pfp.png";
+import LinkCta from "../../shared/Link Cta/linkCta";
 import style from "./aboutSectionStyle.module.scss";
 
 export default function AboutSection() {
@@ -33,7 +34,7 @@ export default function AboutSection() {
 					</p>
 				</div>
 			</div>
-			<div className={style.cta}>resume</div>
+			<LinkCta link={"#"} text="resume" />
 		</section>
 	);
 }

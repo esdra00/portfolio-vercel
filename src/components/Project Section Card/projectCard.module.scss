@@ -127,8 +127,15 @@
 	font-size: 12px;
 	font-weight: 600;
 	text-transform: uppercase;
+	// 101
+	// option 1
 	color: var(--cta-txt);
 	background-color: var(--cta-bg);
+	// option 2
+	background-color: transparent;
+	color: var(--txt);
+	border: 1px solid var(--txt);
+	font-weight: normal;
 
 	@media (max-width: 425px) {
 		font-size: 10px;

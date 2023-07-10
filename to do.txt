@@ -1,2 +1,15 @@
 - cta component separate
 - bouncy cta on click and hover
+
+
+- line component
+- button component
+- fix filter button project page
+
+-add icon to detail links and submitted pop-up
+
+
+
+- optimizes image 
+- check lighthouse
+- check email Form

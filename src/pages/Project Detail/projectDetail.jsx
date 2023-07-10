@@ -1,5 +1,6 @@
 import {useParams} from "react-router-dom";
 import {useFetchID} from "../../hooks/useFetchId";
+import LinkCta from "../../components/shared/Link Cta/linkCta";
 import style from "./projectDetailStyle.module.scss";
 
 export default function ProjectDetail() {
@@ -11,17 +12,13 @@ export default function ProjectDetail() {
 			<h2 className={style.title}>{data?.title}</h2>
 			<img
 				src={`/${data?.preview}`}
-				// src={data?.preview}
 				className={style.img}
-				// alt=""
-				// height={1056}
-				// width={1440}
+				alt="project preview"
 			/>
 			<p className={style.desc}>{data?.description}</p>
-			<div className={style.buttons_w}>
-				<div className={style.button1}>Button</div>
-				<div className={style.button2}>Button</div>
-				<div className={style.button3}>Button</div>
+			<div className={style.cta_w}>
+				<LinkCta link={data?.github} text="Github Code" />
+				<LinkCta link={data?.site} text="Live Site" />
 			</div>
 		</div>
 	);
