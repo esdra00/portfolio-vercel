@@ -84,6 +84,10 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	padding-right: 30px;
+
+	@media (max-width: 425px) {
+		padding-right: 0;
+	}
 }
 
 .txt {
@@ -139,4 +143,6 @@
 	@include line;
 	margin-inline: 0;
 	margin-bottom: 10px;
+
+	// 101 remove margin inline  425px
 }
