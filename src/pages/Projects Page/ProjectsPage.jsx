@@ -1,7 +1,8 @@
-import {m, useIsPresent, LazyMotion, domAnimation} from "framer-motion";
+import {LazyMotion, domAnimation, useIsPresent} from "framer-motion";
 import {useState} from "react";
 import FilterButton from "../../components/Filter Button/filterButton";
 import ProjectPageCard from "../../components/Project Page Card/projectPageCard.jsx";
+import Transition from "../../components/shared/pageTransition";
 import style from "./projectsPageStyle.module.scss";
 
 export default function ProjectsPage() {
@@ -69,19 +70,7 @@ export default function ProjectsPage() {
 						<ProjectPageCard isActive={isActive} />
 					</div>
 				</div>
-				<m.div
-					initial={{scaleX: 1}}
-					animate={{
-						scaleX: 0,
-						transition: {duration: 1, ease: [0.645, 0.045, 0.355, 1]},
-					}}
-					exit={{
-						scaleX: 1,
-						transition: {duration: 1, ease: [0.645, 0.045, 0.355, 1]},
-					}}
-					style={{originX: isPresent ? 0 : 1}}
-					className="privacy-screen"
-				></m.div>
+				<Transition isPresent={isPresent} />
 			</div>
 		</LazyMotion>
 	);

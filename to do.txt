@@ -1,0 +1,2 @@
+- cta component separate
+- bouncy cta on click and hover

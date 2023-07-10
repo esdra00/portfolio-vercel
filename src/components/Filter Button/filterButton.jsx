@@ -12,7 +12,7 @@ export default function FilterButton({array, onclick, classname}) {
 								onClick={onclick}
 							>
 								{filter}
-							</button>
+	 						</button>
 						</li>
 					);
 				})}

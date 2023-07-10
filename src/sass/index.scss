@@ -180,6 +180,11 @@ p {
 	bottom: 0;
 	background-color: var(--cta-bg);
 	z-index: 20000;
+
+	@media(max-width: 425px) {
+		display: none;
+	}
+
 }
 
 ::placeholder {

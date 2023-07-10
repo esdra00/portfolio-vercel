@@ -42,7 +42,23 @@
 }
 
 .cta {
-	@include cta;
+	display: block;
+	padding: 10px 25px;
 	margin-top: 70px;
 	margin-inline: auto;
+	border: 1px solid var(--txt);
+	border-radius: 10px;
+	font-size: 13px;
+	text-transform: uppercase;
+
+	&:hover {
+		cursor: pointer;
+		border-color: var(--bg);
+		background-color: var(--cta-bg);
+		color: var(--txt-secondary);
+	}
+
+	@media (max-width: 425px) {
+		margin-top: 30px;
+	}
 }

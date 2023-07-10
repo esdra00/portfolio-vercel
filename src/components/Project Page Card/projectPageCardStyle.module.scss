@@ -21,9 +21,9 @@
       max-width: 80%;
    }
 
-   @media (min-width: 769px) and (max-width: 1024px) {
-      max-width: 260px;
-   }
+   // @media (min-width: 769px) and (max-width: 1024px) {
+   //    max-width: 260px;
+   // }
 }
 
 .txt_w {
@@ -102,12 +102,12 @@
    border-radius: 5px;
    border: 1px solid var(--txt);
    text-align: center;
-   flex: 0.9;
    overflow: hidden;
 
-   @media (min-width: 769px) and (max-width: 1024px) {
-      flex: 0.7;
-   }
+   // flex: 0.9;
+   // @media (min-width: 769px) and (max-width: 1024px) {
+   //    flex: 0.7;
+   // }
 }
 
 .image {

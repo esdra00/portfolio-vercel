@@ -1,0 +1,80 @@
+@import "src/sass/mixins";
+
+.menu,
+.navMenu {
+	display: flex;
+	align-items: center;
+}
+
+.menu {
+	position: fixed;
+	top: 1.75%;
+	left: 50px;
+	right: 50px;
+	z-index: +10;
+	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+	@media (max-width: 425px) {
+		right: 15px;
+		left: 15px;
+	}
+
+	@media (max-width: 1024px) {
+		right: 25px;
+		left: 25px;
+	}
+}
+
+.navMenu {
+	@include card;
+
+	gap: 30px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid var(--cta-bg);
+	border: 1px solid var(--txt);
+	background-color: var(--bg);
+
+	a {
+		@include link_underline;
+		color: var(--txt);
+	}
+
+	@media (max-width: 425px) {
+		display: none;
+	}
+
+	@media (min-width: 426px) and (max-width: 768px) {
+		gap: 10px;
+		width: 100%;
+		justify-content: space-evenly;
+	}
+}
+
+nav {
+	@media (min-width: 426px) and (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+.line {
+	@include line;
+	// outline: 0.25px solid var(--bg);
+}
+
+.logo {
+	// background-color: var(--bg);
+	border-radius: 5px;
+}
+
+.logo,
+.menu .line {
+	@media (min-width: 426px) and (max-width: 768px) {
+		display: none;
+	}
+}
+
+.main_btn,
+.logo {
+	z-index: 20;
+}
