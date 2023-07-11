@@ -6,9 +6,9 @@ export default function ProjectSection() {
 	return (
 		<section className={style.section} id="projects">
 			<header className={style.title}>
-				<span className={style.line}></span>
+				<div className={style.line}></div>
 				<h2 initial="title">Projects</h2>
-				<span className={style.line}></span>
+				<div className={style.line}></div>
 			</header>
 			<div className={style.container}>
 				<ProjectSectionCard />

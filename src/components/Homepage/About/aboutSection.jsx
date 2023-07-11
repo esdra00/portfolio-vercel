@@ -1,4 +1,4 @@
-import profilePicture from "../../../assets/pfp.png";
+import profilePicture from "../../../assets/images/pfp.png";
 import LinkCta from "../../_shared/Link Cta/linkCta";
 import style from "./aboutSectionStyle.module.scss";
 

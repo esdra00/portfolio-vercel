@@ -1,41 +1,33 @@
-import linkedLogo from "/src/assets/social media icon/macth to bg black/104493_linkedin_icon 1.svg";
-import gmailLogo from "/src/assets/social media icon/macth to bg black/1181190_email_gmail_google_mail_icon 1.svg";
-import githubLogo from "/src/assets/social media icon/macth to bg black/394187_github_icon 1.svg";
-import whatsappLogo from "/src/assets/social media icon/macth to bg black/843786_whatsapp_icon 1.svg";
+import {GithubSvg, GmailSvg, LinkedinSvg, WhatsAppSvg} from "../../_shared/svgIcons";
 
-const Comp = ({img, link, className}) => {
+const Links = ({children, link, className}) => {
 	return (
 		<div className={className}>
 			<a href={link} target="_blank">
-				<img src={img} alt="linkedin link" height={25} width={25} />
+				{children}
 			</a>
 		</div>
 	);
 };
 
-export default function IconSocial({className}) {
+export default function SocialsLinksIcon({className}) {
 	return (
 		<>
-			<Comp
+			<Links className={className} link={"https://github.com/esdra00"}>
+				<GithubSvg />
+			</Links>
+			<Links
 				className={className}
-				img={githubLogo}
-				link={"https://github.com/esdra00"}
-			/>
-			<Comp
-				className={className}
-				img={linkedLogo}
 				link={"https://www.linkedin.com/in/esdra-bergamasco/"}
-			/>
-			<Comp
-				className={className}
-				img={gmailLogo}
-				link={"mailto:esdrabergamasco@gmail.com"}
-			/>
-			<Comp
-				className={className}
-				img={whatsappLogo}
-				link={"tel:+393475330260"}
-			/>
+			>
+				<LinkedinSvg />
+			</Links>
+			<Links className={className} link={"mailto:esdrabergamasco@gmail.com"}>
+				<GmailSvg />
+			</Links>
+			<Links className={className} link={"tel:+393475330260"}>
+				<WhatsAppSvg />
+			</Links>
 		</>
 	);
 }

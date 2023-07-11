@@ -1,8 +1,7 @@
 import {Link} from "react-router-dom";
 import {useFetch} from "../../hooks/useFetch";
-import SvgIcon from "../_shared/svgIcon";
+import ExternalLinkIcon from "../_shared/svgIcons";
 import style from "./projectPageCardStyle.module.scss";
-import LinkCta from "../_shared/Link Cta/linkCta";
 
 export default function ProjectPageCard({isActive}) {
 	const {data} = useFetch();
@@ -20,7 +19,7 @@ export default function ProjectPageCard({isActive}) {
 										className={style.title}
 									>
 										{project.title}
-										<SvgIcon />
+										<ExternalLinkIcon />
 									</Link>
 								</h3>
 								<div className={style.line}></div>

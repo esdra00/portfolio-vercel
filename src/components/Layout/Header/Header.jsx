@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import MenuMobile from "../Menu Mobile/Menu_Mobile";
 import Nav from "../Nav/Nav";
 import style from "./headerStyle.module.scss";
-import logo from "/src/assets/social media icon/Group 3logo 1 - 50x50.svg";
+import logo from "/src/assets/svg icons/Logo.svg";
 
 export default function Header() {
 	// hide menu nav on scrolldown for tablets and laptops
@@ -25,7 +25,7 @@ export default function Header() {
 				<img src={logo} alt="website logo" />
 			</Link>
 			<div className={style.line}></div>
-			<Nav classname={style.navMenu} />
+			<Nav list={style.navMenu} cta={style.cta} />
 			<MenuMobile />
 		</header>
 	);

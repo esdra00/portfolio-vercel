@@ -1,6 +1,6 @@
 import {useState} from "react";
 import Nav from "../Nav/Nav";
-import IconSocial from "../Socials/Social_Icon";
+import SocialsLinksIcon from "../Socials/Social_Icon";
 import style from "./menuMobileStyle.module.scss";
 
 export default function MenuMobile() {
@@ -26,24 +26,21 @@ export default function MenuMobile() {
 					></div>
 				</div>
 			</div>
-			<div
-				className={`${style.menu} ${isOpen ? style.open : ""}`}
-				id="menuMobile"
-			>
+			<div className={`${style.menu} ${isOpen ? style.open : ""}`}>
 				<div className={style.navMobile}>
 					<div className={style.title}>
 						<h6>navigation</h6>
-						<span className={style.line}></span>
+						<div className={style.line}></div>
 					</div>
-					<Nav mobile={style.linkMobile} onClick={toggleMenu} />
+					<Nav link={style.linkMobile} onClick={toggleMenu} cta={style.cta}/>
 				</div>
 				<div className={style.navSocialMobile}>
 					<div className={style.title}>
 						<h6>follow me</h6>
-						<span className={style.line}></span>
+						<div className={style.line}></div>
 					</div>
 					<div className={style.iconsWrapper}>
-						<IconSocial className={style.linkSocial} />
+						<SocialsLinksIcon className={style.linkSocial} />
 					</div>
 				</div>
 			</div>

@@ -1,26 +1,26 @@
 import {Link} from "react-router-dom";
 
-export default function Nav({mobile, classname, onClick}) {
+export default function Nav({link, list, cta, onClick}) {
 	return (
 		<nav>
-			<ul className={classname}>
+			<ul className={list}>
 				<li>
-					<Link to="/" className={mobile} onClick={onClick}>
+					<Link to="/" className={link} onClick={onClick}>
 						Home
 					</Link>
 				</li>
 				<li>
-					<Link to="/projectsPage" className={mobile} onClick={onClick}>
+					<Link to="/projectsPage" className={link} onClick={onClick}>
 						Projects
 					</Link>
 				</li>
 				<li>
-					<Link to="/contactPage" className={mobile} onClick={onClick}>
+					<Link to="/contactPage" className={link} onClick={onClick}>
 						Contact
 					</Link>
 				</li>
 				<li>
-					<h3 className="cta">RESUME</h3>
+					<h3 className={cta}>RESUME</h3>
 				</li>
 			</ul>
 		</nav>
